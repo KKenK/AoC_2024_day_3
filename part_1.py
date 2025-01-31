@@ -6,8 +6,6 @@ def extract_valid_multiple_pairs(input):
     
     for x in range(len(input)):
 
-        chars = ""
-
         if input[x : x + 4] != "mul(":
             
             continue
