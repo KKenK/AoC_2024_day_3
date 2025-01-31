@@ -16,7 +16,7 @@ def extract_valid_multiple_pairs(input):
 
         potentially_valid_pairs.append(potentially_valid_int_pair_str)
 
-    potentially_valid_pairs = [x.split(",") for x in potentially_valid_pairs if len(x.split(",")) == 2]
+    potentially_valid_pairs = [x.split(",") for x in potentially_valid_pairs if "," in x]
     potentially_valid_pairs = [(x[0], x[1]) for x in potentially_valid_pairs if x[0] and x[1]]
 
     valid_pairs = [(int(x[0]), int(x[1])) for x in potentially_valid_pairs 
