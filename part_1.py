@@ -7,7 +7,6 @@ def extract_valid_multiple_pairs(input):
     for x in range(len(input)):
 
         if input[x : x + 4] != "mul(":
-            
             continue
         
         potentially_valid_int_pair_str = seven_char_digit_pair_str_checker(input[x + 4: ])
