@@ -19,15 +19,15 @@ def get_enabled_code(input):
 
     return enabled_input
 
-def find_instruction_indexes(input, instuction_string):
+def find_instruction_indexes(input, instruction_string):
 
-    instuction_string_length = len(instuction_string)
+    instruction_string_length = len(instruction_string)
 
     instruction_indexes = []
 
-    for i in range(0, len(input) - instuction_string_length):
+    for i in range(0, len(input) - instruction_string_length):
 
-        if not input[i : i + instuction_string_length] == instuction_string:
+        if not input[i : i + instruction_string_length] == instruction_string:
             continue
 
         instruction_indexes.append(i)
