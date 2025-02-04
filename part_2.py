@@ -70,10 +70,10 @@ if __name__ == "__main__":
     input_parser = input_parser.InputParser(r"C:\Users\kylek\Documents\code\Advent_of_code\2024\Day_3\input.txt")
 
     enabled_input = get_enabled_code(input_parser.parsed_input)
-    
+
     valid_multiple_pairs = []
 
-    valid_multiple_pairs =extract_valid_multiple_pairs(enabled_input)
+    valid_multiple_pairs = extract_valid_multiple_pairs(enabled_input)
 
     total = 0
 
